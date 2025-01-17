@@ -5,7 +5,10 @@
        Login :http://localhost:3000/api/auth/login
        Register : http://localhost:3000/api/auth/register
 
-
+    Create bodim
+        http://localhost:3000/api/property/add
+    Get list of bodim
+        http://localhost:3000/api/property/list
 
 
 
