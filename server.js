@@ -4,7 +4,9 @@ const express = require('express');
 const app = express();
 
 const connectDB = require('./db');
+
 const authRoutes = require('./routes/auth');
+const propertyRoutes = require('./routes/property');
 
 // Connect to MongoDB
 connectDB();
@@ -15,6 +17,8 @@ app.use(express.json());
 
 // Routes
 app.use('/api/auth', authRoutes);
+
+app.use('/api/property', propertyRoutes);
 
 // Define routes
 app.get('/', (req, res) => {
